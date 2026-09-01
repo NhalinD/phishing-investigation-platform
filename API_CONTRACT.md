@@ -40,3 +40,31 @@ Content-Type: application/json
   "url": "http://paypa1-login.com/verify",
   "attachments": []
 }
+## Response
+
+Content-Type: application/json
+
+```json
+{
+  "riskScore": 92,
+  "verdict": "HIGH_RISK",
+  "confidence": 96,
+  "indicators": [
+    {
+      "type": "DOMAIN_SIMILARITY",
+      "severity": "HIGH",
+      "title": "Possible brand impersonation",
+      "evidence": "The domain closely resembles a known brand.",
+      "score": 25
+    }
+  ],
+  "iocs": {
+    "sender": [],
+    "domains": [],
+    "urls": [],
+    "links": [],
+    "attachments": []
+  },
+  "recommendedAction": "Do not click the link. Report the message to the security team.",
+  "analysisSummary": "Multiple phishing indicators were detected."
+}
